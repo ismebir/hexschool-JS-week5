@@ -69,7 +69,7 @@
               </div>
               <div class="col-9 border-bottom border-primary">
                 <input type="number" class="form-control border-0 radius-12 bg-light py-2" id="ticketPrice"
-                  placeholder="請填寫套票金額">
+                  placeholder="請填寫套票金額" min="0">
               </div>
             </div>
             <!-- ticketNum -->
@@ -79,7 +79,7 @@
               </div>
               <div class="col-9 border-bottom border-primary">
                 <input type="number" class="form-control border-0 radius-12 bg-light py-2" id="ticketNum"
-                  placeholder="請填寫套票組數">
+                  placeholder="請填寫套票組數" min="1">
               </div>
             </div>
             <!-- ticketRate -->
@@ -89,7 +89,7 @@
               </div>
               <div class="col-9 border-bottom border-primary">
                 <input type="number" class="form-control border-0 radius-12 bg-light py-2" id="ticketRate"
-                  placeholder="請填寫套票星級">
+                  placeholder="請填寫套票星級" min="1" max="10">
               </div>
             </div>
             <!-- ticketDescription-->
@@ -173,11 +173,11 @@
                 <span class="material-icons text-primary me-1">
                   info
                 </span>
-                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 ${item.group} 組</p>
+                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 8 組</p>
               </div>
               <div class="price-info d-flex align-items-center">
                 <p class="fs-6 text-primary Noto-Sans-TC fw-medium mb-0 me-1">TWD</p>
-                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$${item.price}</p>
+                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$1,280</p>
               </div>
             </div>
           </div>
@@ -212,11 +212,11 @@
                 <span class="material-icons text-primary me-1">
                   info
                 </span>
-                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 ${item.group} 組</p>
+                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 12 組</p>
               </div>
               <div class="price-info d-flex align-items-center">
                 <p class="fs-6 text-primary Noto-Sans-TC fw-medium mb-0 me-1">TWD</p>
-                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$${item.price}</p>
+                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$2,580</p>
               </div>
             </div>
           </div>
@@ -251,11 +251,11 @@
                 <span class="material-icons text-primary me-1">
                   info
                 </span>
-                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 ${item.group} 組</p>
+                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 2 組</p>
               </div>
               <div class="price-info d-flex align-items-center">
                 <p class="fs-6 text-primary Noto-Sans-TC fw-medium mb-0 me-1">TWD</p>
-                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$${item.price}</p>
+                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$2,480</p>
               </div>
             </div>
           </div>
@@ -290,11 +290,11 @@
                 <span class="material-icons text-primary me-1">
                   info
                 </span>
-                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 ${item.group} 組</p>
+                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">限時搶購</p>
               </div>
               <div class="price-info d-flex align-items-center">
                 <p class="fs-6 text-primary Noto-Sans-TC fw-medium mb-0 me-1">TWD</p>
-                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$${item.price}</p>
+                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$880</p>
               </div>
             </div>
           </div>
@@ -329,11 +329,11 @@
                 <span class="material-icons text-primary me-1">
                   info
                 </span>
-                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 ${item.group} 組</p>
+                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 5 組</p>
               </div>
               <div class="price-info d-flex align-items-center">
                 <p class="fs-6 text-primary Noto-Sans-TC fw-medium mb-0 me-1">TWD</p>
-                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$${item.price}</p>
+                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$1,280</p>
               </div>
             </div>
           </div>
@@ -368,11 +368,11 @@
                 <span class="material-icons text-primary me-1">
                   info
                 </span>
-                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 ${item.group} 組</p>
+                <p class="ticketCard-num fs-6 text-primary fw-medium my-0">剩下最後 3 組</p>
               </div>
               <div class="price-info d-flex align-items-center">
                 <p class="fs-6 text-primary Noto-Sans-TC fw-medium mb-0 me-1">TWD</p>
-                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$${item.price}</p>
+                <p class="ticketCard-price fs-2 text-primary Roboto fw-medium mb-0">$2,480</p>
               </div>
             </div>
           </div>
@@ -387,21 +387,3 @@
 </body>
 
 </html>
-
-
-<!-- $h1-font-size: $font-size-base * 2.5 !default; // 40px
-$h2-font-size: $font-size-base * 2 !default; // 32px
-$h3-font-size: $font-size-base * 1.75 !default; // 28px
-$h4-font-size: $font-size-base * 1.5 !default; // 24px
-$h5-font-size: $font-size-base * 1.25 !default; // 20px
-$h6-font-size: $font-size-base !default; // 16px -->
-
-<!-- 地區用 change 監聽
-上方新增的地區跟下方篩選的地區都寫死選項（依照目前提供的 JSON data area 欄位）
-地區的篩選下拉需要加上『全部地區』option
-不需要有「清除資料」的按鈕
-預設資料為 3 筆（內容需依照目前提供的 JSON data）
-篩選後會顯示『搜尋資料為 ? 筆』
-描述欄位使用 textarea
-星級區間是 1-10 分
-金額、組數、星級的 type 為 Number -->

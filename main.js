@@ -156,10 +156,12 @@ const ticketDescription = document.querySelector("#ticketDescription");
 const addTicketBtn = document.querySelector(".addTicket-btn");
 
 addTicketBtn.addEventListener("click", function (e) {
-  console.log(ticketName.value, ticketImgUrl.value);
+  // 因為點擊的 type 是 submit，會更新整個頁面，導致預期情況無法產生，
+  // 需要取消預設的 submit 的功能 e.preventDefault() 
+  e.preventDefault();
   let obj = {};
 
-  // obj.id = data.length + 1;
+  obj.id = data.length + 1;
   obj.name = ticketName.value;
   obj.imgUrl = ticketImgUrl.value;
   obj.area = ticketRegion.value;
@@ -167,6 +169,7 @@ addTicketBtn.addEventListener("click", function (e) {
   obj.group = ticketNum.value;
   obj.price = ticketPrice.value;
   obj.rate = ticketRate.value;
+  console.log(obj);
   data.push(obj);
   addInfo();
 
@@ -178,3 +181,4 @@ addTicketBtn.addEventListener("click", function (e) {
   ticketPrice.value = "";
   ticketRate.value = "";
 })
+
